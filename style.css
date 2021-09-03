@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.input-area {
+    display: flex;
+    width: 500px;
+    min-height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px black ;
+}
+
+.input-wrapper {
+    width: 80%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 25px;
+}
+
+.button-wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-wrapper button {
+    width: 80%;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+.tags-wrapper {
+    font-size: 15px;
+    color: #cd853f;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(224,130,131); 
+    width: 520px;
+    border-radius: 5px;
+    border: solid 1px black ;
+}
+
+.tags-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    background-color: #fffff0;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.button-delete {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3px;
+    
+}
+
+.btn-delete {
+    color: red;
+    cursor: pointer;
+    border: none;
+    opacity: 0.4;
+    font-size:7px;
+    padding: 0;
+}
+
+.description {
+    height: 20px;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-div {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #243743;
+    transition: 0.5s;
+    margin: 0 10px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox:hover {
+    filter: brightness(1.3);
+}
+
+.checkbox-div::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #28b78d;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.checkbox-input:checked ~ .checkbox-div {
+    background-color: #28b78d 
+}
+
+.checkbox-input:checked ~ .checkbox-div::before {
+    background-color: #243743;
+    left: 22px;
+}
+
+.readonly-mode {
+    opacity: 0.4;
+}
+
+.delete-btn {
+    visibility: hidden;
+}
+
